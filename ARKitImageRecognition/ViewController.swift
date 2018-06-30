@@ -90,7 +90,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             let plane = SCNPlane(width: referenceImage.physicalSize.width,
                                  height: referenceImage.physicalSize.height)
             let planeNode = SCNNode(geometry: plane)
-            let videoNode = SKVideoNode(fileNamed: "big_buck.mp4")
+            let videoNode = SKVideoNode(fileNamed: "bigBuck.mp4")
             videoNode.play()
             let skScene = SKScene(size: CGSize(width: 1000, height: 1000))
             skScene.addChild(videoNode)

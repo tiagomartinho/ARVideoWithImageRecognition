@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24988AB420E7826A00EBCB85 /* big_buck.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24988AB320E7826A00EBCB85 /* big_buck.mp4 */; };
+		24988AB820E79B3500EBCB85 /* bigBuck.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24988AB720E79B3500EBCB85 /* bigBuck.mp4 */; };
 		3929C48C1E89EC2C00E00B60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3929C48B1E89EC2C00E00B60 /* AppDelegate.swift */; };
 		3929C48E1E89EC2C00E00B60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3929C48D1E89EC2C00E00B60 /* ViewController.swift */; };
 		3929C4911E89EC2C00E00B60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3929C48F1E89EC2C00E00B60 /* Main.storyboard */; };
@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		11063F3B1EBE651B0033EE6D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		24988AB320E7826A00EBCB85 /* big_buck.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = big_buck.mp4; sourceTree = "<group>"; };
+		24988AB720E79B3500EBCB85 /* bigBuck.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bigBuck.mp4; sourceTree = "<group>"; };
 		3929C4881E89EC2C00E00B60 /* ARKitImageRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitImageRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3929C48B1E89EC2C00E00B60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3929C48D1E89EC2C00E00B60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		3929C48A1E89EC2C00E00B60 /* ARKitImageRecognition */ = {
 			isa = PBXGroup;
 			children = (
-				24988AB320E7826A00EBCB85 /* big_buck.mp4 */,
+				24988AB720E79B3500EBCB85 /* bigBuck.mp4 */,
 				3929C48B1E89EC2C00E00B60 /* AppDelegate.swift */,
 				3929C48D1E89EC2C00E00B60 /* ViewController.swift */,
 				C8C12A701F29277B00B011FE /* ViewController+ARSessionDelegate.swift */,
@@ -172,8 +172,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24988AB820E79B3500EBCB85 /* bigBuck.mp4 in Resources */,
 				39D8DC1B1E8ADAE600386B05 /* LaunchScreen.storyboard in Resources */,
-				24988AB420E7826A00EBCB85 /* big_buck.mp4 in Resources */,
 				3929C4931E89EC2C00E00B60 /* Assets.xcassets in Resources */,
 				3929C4911E89EC2C00E00B60 /* Main.storyboard in Resources */,
 			);
