@@ -85,27 +85,20 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         guard let imageAnchor = anchor as? ARImageAnchor else { return }
         let referenceImage = imageAnchor.referenceImage
         updateQueue.async {
-            
+
             // Create a plane to visualize the initial position of the detected image.
             let plane = SCNPlane(width: referenceImage.physicalSize.width,
                                  height: referenceImage.physicalSize.height)
             let planeNode = SCNNode(geometry: plane)
-            planeNode.opacity = 0.25
-            
-            /*
-             `SCNPlane` is vertically oriented in its local coordinate space, but
-             `ARImageAnchor` assumes the image is horizontal in its local space, so
-             rotate the plane to match.
-             */
-            planeNode.eulerAngles.x = -.pi / 2
-            
-            /*
-             Image anchors are not tracked after initial detection, so create an
-             animation that limits the duration for which the plane visualization appears.
-             */
-            planeNode.runAction(self.imageHighlightAction)
-            
-            // Add the plane visualization to the scene.
+            let videoNode = SKVideoNode(fileNamed: "big_buck.mp4")
+            videoNode.play()
+            let skScene = SKScene(size: CGSize(width: 1000, height: 1000))
+            skScene.addChild(videoNode)
+            videoNode.position = CGPoint(x: skScene.size.width/2.0, y: skScene.size.height/2.0)
+            videoNode.size = skScene.size
+            plane.firstMaterial?.diffuse.contents = skScene
+            plane.firstMaterial?.isDoubleSided = true
+            planeNode.eulerAngles.x = .pi / 2
             node.addChildNode(planeNode)
         }
 
